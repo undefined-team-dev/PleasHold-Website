@@ -336,6 +336,10 @@ body::-webkit-scrollbar {
     transform: translateY(-4%);
 }
 
+.selected .navigation-card::before{
+    filter: blur(0);
+}
+
 .selected:hover {
     transform: translateY(-4%);
 }
