@@ -303,6 +303,7 @@ body::-webkit-scrollbar {
 .navigation-card button h2 {
     margin: 5;
     pointer-events: none;
+    line-height: 40px;
 }
 
 .navigation-card-container {
