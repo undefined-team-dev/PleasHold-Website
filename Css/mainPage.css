@@ -598,6 +598,13 @@ body::-webkit-scrollbar {
     width: auto;
 }
 
+.abelton-logo {
+    float: right;
+    aspect-ratio: none;
+    width: 500px;
+
+}
+
 .good,.bad{
     padding: 5px;
     border-radius: 10px;
