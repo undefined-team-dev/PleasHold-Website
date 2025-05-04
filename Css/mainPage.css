@@ -180,16 +180,45 @@ body::-webkit-scrollbar {
 }
 
 .section-content ul li::before {
-content: '›';
-position: absolute;
-left: 0;
+    content: '›';
+    position: absolute;
+    left: 0;
 
-font-weight: bold;
+    font-weight: bold;
 }
 
-.section-content > ul li:hover {
-    padding-left: 1.5rem;
-    color: var(--light-blue);
+.list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+.list-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.list-row li {
+    background: var(--light-blue);
+    padding: 1em .5em;
+    border-radius: 5px;
+    flex: 1 1 auto;
+
+    text-align: center;
+    transition: all .2s ease;
+}
+
+.list-row li a {
+    text-decoration: none;
+}
+
+.list-row li:hover {
+    background: var(--dark-blue);
+    box-shadow: 0 0 20px 5px var(--light-blue);
 }
 
 .section-content hr {
@@ -295,7 +324,7 @@ font-weight: bold;
 
 
     
-    height: 2500px;    
+    height: 10000px;    
     margin-bottom: 1%;
 
     border-radius: 8px;
@@ -386,6 +415,29 @@ font-weight: bold;
 }
 
 /* specifically for the game tab */
+
+.game-mechanics-content-section{
+    display: flex;
+}
+
+.part-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+
+    flex-direction: column;
+    width: 80%;
+}
+
+.part-two > img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.smaller{
+    width: 40%;
+}
 
 /* specifically for the gallery tab */
 .im-centering-it-im-centering-it{
@@ -480,7 +532,7 @@ font-weight: bold;
     height: 1000px;
 }
 
-.data{
+.assets{
     height: 1000px;
 }
 
