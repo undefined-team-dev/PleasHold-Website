@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Css/globalStyles.css">
+    <link rel="stylesheet" href="Css/utilityStyles.css">
+    <link rel="stylesheet" href="Css/tutorialPage.css">
+
+
+    <title>Tutorials</title>
+</head>
+<body>
+   <div class="container">
+       <div class="nav-bar">
+            <div class="music-mute-btn" onclick="switchMusic()">
+                <img id="volume-icon" src="Assets/SVG/volume_off.svg">
+            </div>
+
+            <div class="nav-item">
+                <a href="TeamPage.html">
+                <button class="nav-btn">
+                    <img src="Assets/SVG/info.svg">
+                    TEAM</button>
+                </a>
+            </div>
+            <div class="nav-item ">
+                <a href="MainPage.html">
+                <button class="nav-btn">
+                    <img src="Assets/SVG/home.svg">
+                    MAIN PAGE</button>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="TutorialPage.html">
+                <button class="nav-btn nav-item-selected">
+                    <img src="Assets/SVG/tutorial.svg">
+                    TUTORIALS</button>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="DownloadPage.html">
+                <button class="nav-btn">
+                    <img src="Assets/SVG/download.svg">
+                    DOWNLOAD</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Tutorials</h1>
+
+            <div class="content-section right">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <video src="Assets/Videos/Tutorials/build.mp4" controls></video>
+            </div>
+            
+            <div class="content-section left">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <video src="Assets/Videos/Tutorials/repair.mp4" controls></video>
+            </div>
+
+            <div class="content-section right">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <video src="Assets/Videos/Tutorials/menu.mp4" controls></video>
+            </div>
+
+            <div class="content-section left">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <video src="Assets/Videos/Tutorials/new.mp4" controls></video>
+            </div>
+
+            <div class="content-section right">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <video src="Assets/Videos/Tutorials/end.mp4" controls></video>
+            </div>
+
+            <div class="content-section left">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <video src="Assets/Videos/Tutorials/project.mp4" controls></video>
+            </div>
+        </div>
+   </div>
+
+   <div id="fullscreen-viewer" class="fullscreen hidden-wo-display">
+        <span class="close-btn" onclick="closeImage()">✖</span>
+        <img id="fullscreen-img" src="" alt="">
+    </div>
+
+   <script src="JS/signiture.js"></script>
+   <script src="JS/tutorialPage.js"></script>
+   <script src="JS/music.js"></script>
+
+</body>
+</html>
