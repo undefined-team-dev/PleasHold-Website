@@ -26,7 +26,7 @@ function showMainPage(){
 
 // Content switcher
 function showView(buttonId,viewId) {
-    document.querySelectorAll('.navigation-card').forEach(card => {
+    document.querySelectorAll('.navigation-card-container').forEach(card => {
         card.classList.remove('selected');
       });
 

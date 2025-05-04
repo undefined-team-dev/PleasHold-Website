@@ -11,8 +11,11 @@
 * {
     font-family: "PixelFont";
     color: white;
-    --light-blue: #77b2fc;
+    --light-purple: #663a58;
+    --dark-purple: #3b1f33;
+    --purple: #283561;
     --dark-blue: #064796;
+    --light-blue: #77b2fc;
     --black: #000000;
 }
 

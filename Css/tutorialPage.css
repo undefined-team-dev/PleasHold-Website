@@ -32,6 +32,7 @@ body {
 h1 {
     font-family: "WidePixelFont";
     font-size: 2vw;
+    margin-bottom: 130px;
 }
 
 .content-section {
@@ -58,10 +59,18 @@ p {
 
 .left {
     flex-direction: row-reverse;
+    text-align: left;
+
 }
 
 .right {
+    text-align: left;
     flex-direction: row;
+}
+
+.content-section-text {
+    display: flex;
+    flex-direction: column;
 }
 
 @media only screen and (max-width: 1000px) {

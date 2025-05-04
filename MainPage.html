@@ -88,30 +88,44 @@
 
                 <div class="section navigation">
                     <div class="navigation-cards">
-                        <div class="navigation-card" id="game-mechanics-card">
-                            <button onclick="showView('game-mechanics-card','game-mechanics-content')">
-                                <h2>Game Mechanincs</h2>
-                            </button>
+                        <div class="navigation-card-container" id="game-mechanics-card">
+                            <div class="navigation-card">
+                                <button onclick="showView('game-mechanics-card','game-mechanics-content')">
+                                    <h2>Game Mechanincs</h2>
+                                </button>
+                            </div>
                         </div>
-                        <div class="navigation-card" id="systems-card">
-                            <button onclick="showView('systems-card' ,'systems-content')">
-                                <h2>Systems</h2>
-                            </button>
+
+                        <div class="navigation-card-container" id="systems-card">
+                            <div class="navigation-card">
+                                <button onclick="showView('systems-card' ,'systems-content')">
+                                    <h2>Systems</h2>
+                                </button>
+                            </div>
                         </div>
-                        <div class="navigation-card" id="development-card">
-                            <button onclick="showView('development-card' ,'development-content')">
-                                <h2>Development</h2>
-                            </button>
+
+                        <div class="navigation-card-container" id="development-card">
+                            <div class="navigation-card">
+                                <button onclick="showView('development-card' ,'development-content')">
+                                    <h2>Development</h2>
+                                </button>
+                            </div>
                         </div>
-                        <div class="navigation-card" id="assets-card">
-                            <button onclick="showView('assets-card' ,'assets-content')">
-                                <h2>Assets</h2>
-                            </button>
+
+                        <div class="navigation-card-container" id="data-card">
+                            <div class="navigation-card">
+                                <button onclick="showView('data-card' ,'data-content')">
+                                    <h2>Data</h2>
+                                </button>
+                            </div>
                         </div>
-                        <div class="navigation-card" id="gallery-card">
-                            <button onclick="showView('gallery-card' ,'gallery-content')">
-                                <h2>Gallery</h2>
-                            </button>
+
+                        <div class="navigation-card-container" id="gallery-card">
+                            <div class="navigation-card">
+                                <button onclick="showView('gallery-card' ,'gallery-content')">
+                                    <h2>Gallery</h2>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -465,7 +479,7 @@
                                 <div class="window">
                                     <div id="titlebar">
                                         <p id="titlebar-title">File viewer</p>
-                                        <p>X</p>
+                                        <p>✖</p>
                                     </div>
                             
                                     <div id="file-chooser">
