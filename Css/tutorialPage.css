@@ -13,6 +13,27 @@ body {
     image-rendering: pixelated;
 }
 
+ul {
+    list-style: none;
+    padding-left: 2rem;
+}
+
+ul li {
+    position: relative;
+    padding-left: 1.2em;
+    padding-bottom: 1rem;
+
+    transition: all .1s ease;
+}
+
+ul li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+
+    font-weight: bold;
+}
+
 .container {
     height: 100%;
     display: flex;
