@@ -52,6 +52,12 @@ function openImage(src) {
   viewer.classList.remove('hidden-wo-display');
 }
 
+document.addEventListener('keydown', (event) => {
+  if (event.key == "Escape" && !document.getElementById('fullscreen-viewer').classList.contains('hidden-wo-display')) {
+    closeImage();
+  }
+});
+
 function closeImage() {
   document.getElementById('fullscreen-viewer').classList.add('hidden-wo-display');
 }

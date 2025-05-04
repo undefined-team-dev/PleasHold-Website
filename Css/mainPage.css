@@ -151,7 +151,7 @@ body::-webkit-scrollbar {
 }
 
 /* section rulesets */
-.section, .section-title{
+.section, .section-title, .section-content{
     display: block;
 }
 
@@ -160,10 +160,14 @@ body::-webkit-scrollbar {
     font-size: 3rem;
 }
 
-.section-content{
-    display: block;
+.padding-div img {
+    width: 150px;
+    float: right;
 }
 
+.section-title {
+    margin-bottom: 50px;
+}
 
 
 .list-wrapper {
@@ -388,6 +392,11 @@ body::-webkit-scrollbar {
 .navigation-card h2{
     text-align: center;
     font-size: 1.3vw;
+}
+
+.navigation-card img {
+    width: 45%;
+    align-self: center;
 }
 
 /* changing section  */
