@@ -9,6 +9,10 @@ body {
     background-color: black;
 }
 
+body::-webkit-scrollbar {
+    display: none;          /* hides the scrollbar (WebKit browsers) */
+}
+
 .container {
     height: 100%;
     background-color: black;
