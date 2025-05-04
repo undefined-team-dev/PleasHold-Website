@@ -6,12 +6,14 @@ html, body {
 }
 
 body {
-    background-color: black;
+    background-image: url("../Assets/Images/DownloadPage/gameFullscreenScreen.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container {
     height: 100%;
-    background-color: black;
     display: flex;
     justify-content: center;
 }
@@ -26,7 +28,7 @@ body {
     height: 100%;
 }
 
-#download-button {
+/* #download-button {
 
     width: 20%;
     height: 7%;
@@ -43,7 +45,7 @@ body {
 
 #download-button:hover{
     background-color: var(--dark-blue);
-}
+} */
 
 p {
     max-width: 50%;
@@ -54,4 +56,15 @@ p {
 h1 {
     font-family: "WidePixelFont";
     font-size: 2vw;
+}
+
+.content img {
+    width: 290px;
+    aspect-ratio: 1.5;
+    transition: all 0.5s ease;
+}
+
+.content img:hover {
+    width: 320px;
+    filter: sepia(1);
 }
