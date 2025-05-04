@@ -181,7 +181,7 @@ ul li::before {
     font-size: 3rem;
 }
 
-.padding-div img {
+.section-image  {
     width: 150px;
     float: right;
 }
@@ -324,6 +324,7 @@ ul li::before {
 .navigation-card button h2 {
     margin: 5;
     pointer-events: none;
+    line-height: 40px;
 }
 
 .navigation-card-container {
