@@ -160,7 +160,7 @@ body::-webkit-scrollbar {
     font-size: 3rem;
 }
 
-.padding-div img {
+.section-image  {
     width: 150px;
     float: right;
 }
