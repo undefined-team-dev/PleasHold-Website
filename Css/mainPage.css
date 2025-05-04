@@ -28,6 +28,10 @@ body::-webkit-scrollbar {
     display: none;          /* hides the scrollbar (WebKit browsers) */
 }
 
+.flex-div{
+    display: flex;
+}
+
 
 .container {
     height: 100%;
@@ -199,6 +203,10 @@ font-weight: bold;
 /* about section */
 .about-game{
     margin: auto;
+    width: 100%;
+}
+
+.half-width{
     width: 50%;
 }
 
@@ -209,13 +217,26 @@ font-weight: bold;
 .about-game-content{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 
 
 .intro-gif{
     border-radius: 5px;
-    width: 70%;
+    width: 30%;
 }
+
+.story-holder{
+    margin-top: 1%;
+    width: 100%;
+    background-color: rgb(34, 20, 30);
+    border-radius: 10px;
+    /* padding-bottom: 1%; */
+    border-bottom: 2vh solid rgb(19, 14, 18);
+}
+
+
 
 
 /* navigation section */
@@ -384,13 +405,44 @@ font-weight: bold;
 
 /* development tab only */
 
+.workdivision-div{
+    margin: 2% 0 2% 0;
+    
+}
+
+.workdivision-div > h2 , .workdivision-div p {
+    text-align: center;
+}
+
+.workdivision-div > h2 {
+    color: var(--light-blue);
+}
+
+.workdivision-div p {
+    width: 50%;
+}
+
+.text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.techstack-div{
+    display: flex;
+    align-items: stretch;
+}
+
+.techstack-div h2 {
+    color: var(--light-blue);
+}
+
 .logo-holder{
     width: 40%;
-    height: 100%;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* justify-items: stretch; */
     gap: 1vw;
 }
 
@@ -398,6 +450,20 @@ font-weight: bold;
     aspect-ratio: 1/1;
     height: 150px;
     width: auto;
+}
+
+.good,.bad{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.good{
+    background-color: green;
+}
+
+.bad{
+    margin-top: 1%;
+    background-color: rgb(169, 0, 0);
 }
 
 
