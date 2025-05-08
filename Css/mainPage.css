@@ -426,9 +426,8 @@ ul li::before {
     position: relative;
     overflow: hidden;
 
+    height: 3000px;
 
-    
-    height: 10000px;    
     margin-bottom: 1%;
 
     border-radius: 8px;
