@@ -674,7 +674,7 @@ ul li::before {
         font-size: 6vw;
     }
 
-    .game-mechanics-content-section {
+    .game-mechanics-content-section, .systems-content-section, .development-content-section {
         flex-wrap: wrap;
         display: flex;
         align-items: center;
@@ -686,7 +686,7 @@ ul li::before {
         width: 100%;
     }
 
-    .game-mechanics-content-section img {
+    .game-mechanics-content-section img, .systems-content-section img, .development-content-section img {
         width: 100%;
         align-self: center;
     }
