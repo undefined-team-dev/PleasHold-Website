@@ -78,11 +78,12 @@ body.noscroll::-webkit-scrollbar {
     width: 100%;
     height: 100%;
     
-    justify-content: center;    
+    justify-content: center;
+    gap: vw;    
 }
 
 .download-container > *:first-child {
-    border-right: 3px solid var(--light-blue);
+    /* border-right: 3px solid var(--light-blue); */
 }
 
 .download-option{
@@ -129,3 +130,14 @@ body.noscroll::-webkit-scrollbar {
 .download-btn:has(img:hover) .descriptior-text {
     color: var(--light-blue);
   }
+
+.qrholder{
+    height: 100%;
+}
+
+.qrcode{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
