@@ -661,4 +661,8 @@ ul li::before {
         font-size: 4vw;
 
     }
+
+    .intro-gif {
+        width: 100%;
+    }
 }
