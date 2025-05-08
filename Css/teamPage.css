@@ -153,6 +153,7 @@ h1 {
     color: var(--light-blue);
     filter: drop-shadow(0 0 10px var(--light-blue));
     padding: 5px;
+    line-height: 40px;
 }
 
 #email {
