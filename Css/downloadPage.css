@@ -7,8 +7,9 @@ html, body {
     padding: 0;
     height: 100%;
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
+
 
 body {
     background-image: url("../Assets/Images/DownloadPage/gameFullscreenScreen.png");
@@ -19,14 +20,14 @@ body {
     opacity: 1;
 }
 
-body.noscroll {
-    overflow: hidden;       /* disables all scrolling */
-    height: 100vh;          /* prevent sneaky overflows */
+/* body.noscroll {
+    overflow: hidden;       
+    height: 100vh;          
 }
   
 body.noscroll::-webkit-scrollbar {
-    display: none;          /* hides the scrollbar (WebKit browsers) */
-}
+    display: none;          
+} */
 
 .container {
     height: 100%;
@@ -34,16 +35,18 @@ body.noscroll::-webkit-scrollbar {
     justify-content: center;
 }
 
-.black{
-  width: 100%;
-  height: 100%;
-  
-  background-color: black;
-  position: absolute;
-  z-index: 0;
-
-  opacity: .3;
+.black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: none; /* optional: prevents blocking clicks */
 }
+  
 
 .content{
     margin-top: 110px;
@@ -61,11 +64,17 @@ body.noscroll::-webkit-scrollbar {
 }
 
 .content > p {
-    max-width: 50%;
+    width: 50%;
     text-align: center;
     line-height: 20px;
 }
 
+
+@media only screen and (max-width: 1000px) {
+    .content > p {
+        width: 100%;
+    }
+}
 
 
 .download-container{
@@ -73,18 +82,14 @@ body.noscroll::-webkit-scrollbar {
     display: flex;
     width: 100%;
     height: 100%;
-    
+    flex-wrap: wrap;
     justify-content: center;
-    gap: vw;    
-}
-
-.download-container > *:first-child {
-    /* border-right: 3px solid var(--light-blue); */
+    gap: 0vw;    
 }
 
 .download-option{
-    width: 30%;
-    height: 100%;
+    flex: 1 1 300px;  
+    max-width: 70%;
     
     display: flex;
     flex-direction: column;
@@ -94,38 +99,61 @@ body.noscroll::-webkit-scrollbar {
 .download-option > h2 {
     color: white;
     font-size: 2rem;
+    line-height: 2rem;
+    color: var(--light-blue);
 }
 
 .download-btn{
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.download-btn p{
-    height: 15%;
+.download-btn > a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.download-btn > img {
-    width: 50%;
-    height: auto;
-    transition: all 0.1s ease;
+.button{
+    border-radius: .75rem;
+    display: flex;
+    align-items: center;
 
+    width: 60%;
+    height: fit-content;
+    padding: 10px;
+    background-color: var(--light-blue);
+    transition: all .1s ease;
 }
 
-.download-btn > img:hover {
-    width: 55%;
-    height: auto;
+.button:hover{
+    background-color: var(--dark-blue);
 }
 
-.descriptior-text{
-    transition: all 0.1s ease;
-    color: white;
+.button p {
+    font-family: 'WidePixelFont';
+    font-size: 200%;
+    width: 100%;
+    text-align: center;
 }
 
-.download-btn:has(img:hover) .descriptior-text {
-    color: var(--light-blue);
-  }
+@media only screen and (max-width: 1000px) {
+
+    .button p {
+        font-family: 'WidePixelFont';
+        font-size: 100%;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
 
 .qrholder{
     height: 100%;
@@ -137,3 +165,4 @@ body.noscroll::-webkit-scrollbar {
     aspect-ratio: 1/1;
     border-radius: 10px;
 }
+
