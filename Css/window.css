@@ -105,3 +105,24 @@ thead {
 #file-chooser button p {
     overflow-wrap: break-word;
 }
+
+@media only screen and (max-width: 1000px) {
+    #file-chooser button {
+        width: 100%;
+    }
+
+    .window-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .window {
+        overflow: auto;
+    }
+
+    tr {
+        margin-left: 150px;
+    }
+}

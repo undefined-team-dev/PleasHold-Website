@@ -23,7 +23,7 @@ function open_file(file_name) {
 
     if (file) {
         file_chooser.style.display = "none";
-        file.style.display = "block";
+        file.style.display = "flex";
 
         current_file = file
 
