@@ -143,6 +143,7 @@ h1 {
         flex-wrap: wrap;
 
         justify-content: center;
+        border-radius: 10px;
     }
 
     .nav-btn > img {
