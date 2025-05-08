@@ -243,6 +243,12 @@ ul li::before {
     width: 50%;
 }
 
+@media only screen and (max-width: 1000px) {
+    .half-width{
+        width: 100%;
+    }
+}
+
 .about-game p, .about-game h1{
     text-align: center;
 }
