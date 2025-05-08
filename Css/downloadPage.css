@@ -58,10 +58,6 @@ body.noscroll::-webkit-scrollbar {
 
 .content > h1 {
     color: black;
-    font-size: 5rem;
-    
-    font-family: "WidePixelFont";
-    font-size: 2vw;
 }
 
 .content > p {

@@ -521,11 +521,21 @@
                                         <button onclick="open_file('residents.accdb')"><img src="Assets/Images/File chooser/file_icon_red.png"><p>Lakosok</p></button>
                                         <button onclick="open_file('projects-data.accdb')"><img src="Assets/Images/File chooser/file_icon_red.png"><p>Projektek</p></button>
                                         <button onclick="open_file('switchtable.accdb')"><img src="Assets/Images/File chooser/file_icon_red.png"><p>Kapcsolótábla</p></button>
-                                        <button onclick="open_file('residents-stat.xlsx')"><img src="Assets/Images/File chooser/file_icon_green.png"><p>Korcsoportok megoszlása</p></button>
+                                        <button onclick="open_file('residents-stat.xlsx')"><img src="Assets/Images/File chooser/file_icon_green.png"><p>Korcsoportok</p></button>
                                         <button onclick="open_file('projects-stat.xlsx')"><img src="Assets/Images/File chooser/file_icon_green.png"><p>Projektek és költségek</p></button>
                                         <button onclick="open_file('buildings-stat.xlsx')"><img src="Assets/Images/File chooser/file_icon_green.png"><p>Épületek statisztikája</p></button>
+                                        <button onclick="open_file('menu_theme.mp3')"><img src="Assets/Images/File chooser/file_icon_pink.png"><p>PleaseHold.mp3</p></button>
+                                        <button onclick="open_file('game_theme.mp3')"><img src="Assets/Images/File chooser/file_icon_pink.png"><p>MainGameMusic.mp3</p></button>
                                     </div>
                             
+                                    <div class="window-content" id="menu_theme" style="display: none;">
+                                        <audio src="Assets/Musics/PleaseHold_Theme_loop.mp3" controls></audio>
+                                    </div>
+
+                                    <div class="window-content" id="game_theme" style="display: none;">
+                                        <audio src="Assets/Musics/MainGameMusic.wav" controls></audio>
+                                    </div>
+
                                     <div class="window-content" id="buildings" style="display: none;">
                                         <table>
                                             <thead>
@@ -1209,6 +1219,7 @@
    <script src="JS/signiture.js"></script>
    <script src="JS/window.js"></script>
    <script src="JS/music.js"></script>
+
 
 </body>
 </html>

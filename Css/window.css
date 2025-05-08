@@ -97,8 +97,8 @@ thead {
 }
 
 #file-chooser button {
-    height: min-content;
-    width: 20%;
+    height: 5%;
+    width: 18%;
     margin-bottom: 10px;
 }
 

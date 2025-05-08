@@ -95,7 +95,7 @@ body {
     text-align: center;
     justify-content: space-evenly;
     gap: 20px;
-    max-width: 100%;
+    max-width: 98%;
     overflow-y: hidden;
     overflow-x: auto;
     flex-wrap: wrap;
@@ -173,7 +173,7 @@ ul {
         width: 100%;
     }
     .member_icon {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 }

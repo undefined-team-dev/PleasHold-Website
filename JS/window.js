@@ -6,10 +6,13 @@ const titlebar_title = document.getElementById("titlebar-title");
 const colors = {
     "yellow":"rgb(165, 155, 10)",
     "red":"rgb(117, 35, 35)",
-    "green":"rgb(17, 107, 17)"
-}
+    "green":"rgb(17, 107, 17)",
+    "pink":"rgb(173, 78, 182)",
+};
 
-let current_file = null
+const extension_list = ["accdb", "xlsx", "mp3"];
+
+let current_file = null;
 
 for (let i=0; i < window_contents.length; i++) {
     window_contents[i].innerHTML = "<button onclick='close_file()'>Back</button>"+window_contents[i].innerHTML;
@@ -26,9 +29,12 @@ function open_file(file_name) {
 
         if (file_name.includes(".accdb")) {
             titlebar.style.backgroundColor = colors.red;
-        } else {
+        } else if (file_name.includes(".xlsx")) {
             titlebar.style.backgroundColor = colors.green;
+        } else if (file_name.includes(".mp3")) {
+            titlebar.style.backgroundColor = colors.pink;
         }
+
         titlebar_title.textContent = file_name;
     }
 }

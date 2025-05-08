@@ -23,6 +23,10 @@ p, h1, h2, h3{
     line-height: 25px;
 }
 
+h1 {
+    font-family: "WidePixelFont";
+}
+
 .nav-bar{
     z-index: 98;
 
@@ -75,7 +79,7 @@ p, h1, h2, h3{
     background-color: #36506fb5;
 }
 
-.music-mute-btn{
+.music-mute-btn {
     position: absolute;
     left: 1%;
     width: 2%;
@@ -122,6 +126,12 @@ p, h1, h2, h3{
     cursor: pointer;
 }
 
+@media only screen and (min-width: 1000px) {
+    h1 {
+        font-size: 2vw;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     .nav-btn {
         display: flex;
@@ -130,7 +140,20 @@ p, h1, h2, h3{
     }
 
     .nav-btn > img {
-        height: 70%;
+        height: 100%;
+    }
+
+    .nav-btn {
+        font-size: 0;
+    }
+
+    .music-mute-btn #volume-icon{
+        height: 100%;
+        width: max-content;
+    }
+
+    h1 {
+        line-height: 115%;
     }
 }
 
