@@ -330,6 +330,8 @@ ul li::before {
 .navigation-card-container {
     transition: transform 0.2s ease;
     border-radius: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -426,7 +428,7 @@ ul li::before {
     position: relative;
     overflow: hidden;
 
-    height: 3000px;
+    height: 8175px;
 
     margin-bottom: 1%;
 
