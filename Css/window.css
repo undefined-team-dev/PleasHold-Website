@@ -2,6 +2,7 @@
     border: black 3px solid;
     width: fit-content;
     height: 40%;
+    max-width: 100%;
     background-color: white;
     align-self: center;
 }
@@ -86,8 +87,8 @@ thead {
 }
 
 #file-chooser img {
-    height: 80%;
-    margin: 10px;
+    height: 50%;
+    margin: 0px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -97,14 +98,31 @@ thead {
 }
 
 #file-chooser button {
-    height: 5%;
+    height: 300px;
     width: 18%;
     margin-bottom: 10px;
+    
 }
 
 #file-chooser button p {
-    overflow-wrap: break-word;
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 10px;
 }
+
+.scroll-container {
+    overflow-x: auto;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
 
 @media only screen and (max-width: 1000px) {
     #file-chooser button {
@@ -120,9 +138,5 @@ thead {
 
     .window {
         overflow: auto;
-    }
-
-    tr {
-        padding-left: 10000px;
     }
 }
