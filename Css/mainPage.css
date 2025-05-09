@@ -563,11 +563,11 @@ ul li::before {
     align-items: center;
 }
 
-.after-release, .before-release{
+.after-release, .before-release .memes{
     margin: 3rem 0 3rem 0;
 }
 
-.after-release h2, .before-release h2{
+.after-release h2, .before-release h2, .memes h2{
     color: var(--light-blue);
 }
 
